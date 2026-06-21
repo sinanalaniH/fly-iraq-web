@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C5A55A"/>
+      <stop offset="50%" style="stop-color:#E8D5A3"/>
+      <stop offset="100%" style="stop-color:#9A7B3D"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="96" fill="url(#goldGrad)"/>
+  <circle cx="100" cy="100" r="90" fill="#0F1B33"/>
+  <g fill="#F5F0E8">
+    <!-- Eagle body -->
+    <ellipse cx="100" cy="108" rx="18" ry="22"/>
+    <!-- Eagle head -->
+    <circle cx="100" cy="78" r="14"/>
+    <!-- Beak -->
+    <polygon points="100,70 108,82 100,78 92,82"/>
+    <!-- Left wing spread -->
+    <path d="M82 95 Q55 85 38 65 Q30 80 42 100 Q35 105 32 115 Q45 110 58 100 Q50 115 55 125 Q68 115 78 105"/>
+    <!-- Right wing spread -->
+    <path d="M118 95 Q145 85 162 65 Q170 80 158 100 Q165 105 168 115 Q155 110 142 100 Q150 115 145 125 Q132 115 122 105"/>
+    <!-- Tail feathers -->
+    <polygon points="100,128 108,148 100,142 92,148"/>
+    <!-- Eye -->
+    <circle cx="96" cy="76" r="2.5" fill="#0F1B33"/>
+    <circle cx="104" cy="76" r="2.5" fill="#0F1B33"/>
+  </g>
+  <!-- Gold accent ring -->
+  <circle cx="100" cy="100" r="86" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.5"/>
+</svg>

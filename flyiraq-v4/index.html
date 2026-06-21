@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fly Iraq First — Our Story</title>
+    <meta name="description" content="Fly Iraq First — Iraq's airline. Discover our story, the places we fly, our fleet, and how to contact us." />
+    <meta name="theme-color" content="#7a2e2a" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fly Iraq First — Our Story" />
+    <meta property="og:description" content="Iraq's airline. Our story, our destinations, and how to reach us." />
+    <meta property="og:image" content="images/hero-bg.jpg" />
+    <link rel="icon" href="images/logo-transparent.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <style>
+      :root{
+        --maroon:#7a2e2a; --maroon-d:#5e221f; --terra:#b9602f; --gold:#c69b54;
+        --sand:#f6efe4; --sand-2:#efe5d4; --cream:#fbf7f0; --ink:#2b231d; --muted:#7a6f63; --line:#e4d9c7;
+        --maxw:1120px; --serif:"Cormorant Garamond",Georgia,serif; --sans:"Jost",system-ui,sans-serif;
+      }
+      *{box-sizing:border-box;margin:0;padding:0}
+      html{scroll-behavior:smooth;scroll-padding-top:78px}
+      body{font-family:var(--sans);color:var(--ink);background:var(--cream);line-height:1.7;-webkit-font-smoothing:antialiased}
+      img{max-width:100%;display:block}
+      a{color:inherit;text-decoration:none}
+      h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08}
+      .container{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 26px}
+      .btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--sans);font-weight:500;letter-spacing:.03em;font-size:.9rem;text-transform:uppercase;padding:.85rem 1.8rem;border-radius:2px;cursor:pointer;border:1px solid var(--maroon);transition:.2s}
+      .btn-fill{background:var(--maroon);color:var(--cream)}
+      .btn-fill:hover{background:var(--maroon-d)}
+      .btn-line{background:transparent;color:var(--maroon)}
+      .btn-line:hover{background:var(--maroon);color:var(--cream)}
+      .hero .btn-line{border-color:var(--cream);color:var(--cream)}
+      .hero .btn-line:hover{background:var(--cream);color:var(--maroon)}
+      .eyebrow{font-family:var(--sans);text-transform:uppercase;letter-spacing:.32em;font-size:.72rem;font-weight:500;color:var(--terra);margin-bottom:1rem}
+
+      header{position:sticky;top:0;z-index:50;background:rgba(251,247,240,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+      .nav{display:flex;align-items:center;justify-content:space-between;height:78px}
+      .brand{display:flex;align-items:center;gap:.6rem}
+      .brand img{width:40px;height:40px;object-fit:contain}
+      .brand span{font-family:var(--serif);font-size:1.35rem;font-weight:600;color:var(--maroon);letter-spacing:.01em}
+      .menu{display:flex;gap:2rem}
+      .menu a{font-size:.82rem;text-transform:uppercase;letter-spacing:.12em;color:var(--ink);font-weight:400}
+      .menu a:hover{color:var(--maroon)}
+      .burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px}
+      .burger span{width:24px;height:1.5px;background:var(--maroon)}
+
+      /* Hero */
+      .hero{position:relative;color:var(--cream);padding:160px 0 130px;background:linear-gradient(rgba(94,34,31,.55),rgba(43,35,29,.7)),url('images/hero-bg.jpg') center/cover}
+      .hero-inner{max-width:760px}
+      .hero h1{font-size:clamp(3rem,8vw,6rem);font-weight:600;margin-bottom:1.2rem;letter-spacing:-.01em}
+      .hero p{font-size:clamp(1.1rem,1.7vw,1.4rem);color:rgba(255,255,255,.9);max-width:540px;margin-bottom:2.2rem;font-weight:300}
+      .hero .btn{margin-right:.6rem;margin-bottom:.6rem}
+
+      section{padding:100px 0}
+      .sand{background:var(--sand)}
+      .head{max-width:680px;margin:0 auto 3.5rem;text-align:center}
+      .head h2{font-size:clamp(2.2rem,4.5vw,3.4rem);color:var(--maroon);margin-bottom:.5rem}
+      .head p{color:var(--muted)}
+      .rule{width:60px;height:2px;background:var(--gold);margin:1.2rem auto 0}
+
+      /* About */
+      .about{display:grid;grid-template-columns:1.1fr 1fr;gap:4rem;align-items:center}
+      .about-media{position:relative}
+      .about-media img{aspect-ratio:4/5;object-fit:cover;border-radius:2px}
+      .about-media::after{content:"";position:absolute;inset:18px -18px -18px 18px;border:1px solid var(--gold);z-index:-1;border-radius:2px}
+      .about h2{font-size:clamp(2.2rem,4.5vw,3.4rem);color:var(--maroon);margin:.4rem 0 1.2rem}
+      .about p{color:var(--muted);margin-bottom:1.1rem;font-size:1.05rem}
+
+      /* Values */
+      .values{display:grid;grid-template-columns:repeat(3,1fr);gap:2.5rem}
+      .value{text-align:center}
+      .value .num{font-family:var(--serif);font-size:2.6rem;color:var(--gold);line-height:1}
+      .value h3{font-size:1.6rem;color:var(--maroon);margin:.6rem 0 .4rem}
+      .value p{color:var(--muted);font-size:.98rem}
+
+      /* Destinations */
+      .dests{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+      .dest{position:relative;overflow:hidden;aspect-ratio:1;border-radius:2px}
+      .dest img{width:100%;height:100%;object-fit:cover;transition:transform .6s;filter:saturate(.92)}
+      .dest:hover img{transform:scale(1.07)}
+      .dest span{position:absolute;left:0;right:0;bottom:0;padding:1.1rem;color:var(--cream);font-family:var(--serif);font-size:1.4rem;background:linear-gradient(transparent,rgba(43,35,29,.8))}
+
+      /* Fleet strip */
+      .fleet{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem}
+      .fleet figure{background:var(--cream);border:1px solid var(--line);border-radius:2px;overflow:hidden}
+      .fleet img{aspect-ratio:16/10;object-fit:cover}
+      .fleet figcaption{padding:1.3rem}
+      .fleet h3{color:var(--maroon);font-size:1.5rem}
+      .fleet p{color:var(--muted);font-size:.92rem}
+
+      /* Contact */
+      .contact{background:var(--maroon);color:var(--cream)}
+      .contact .head h2{color:var(--cream)}
+      .contact .head p{color:rgba(255,255,255,.8)}
+      .contact .rule{background:var(--gold)}
+      .contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;max-width:880px;margin:0 auto}
+      .ci{text-align:center;padding:2rem 1rem;border:1px solid rgba(255,255,255,.18);border-radius:2px}
+      .ci .ico{font-size:1.6rem;margin-bottom:.7rem}
+      .ci h3{font-family:var(--sans);text-transform:uppercase;letter-spacing:.12em;font-size:.8rem;font-weight:500;margin-bottom:.6rem;color:var(--gold)}
+      .ci a,.ci p{color:rgba(255,255,255,.92);font-size:1.05rem;word-break:break-word}
+      .ci a:hover{color:var(--gold)}
+
+      footer{background:var(--maroon-d);color:rgba(255,255,255,.72);text-align:center;padding:44px 0;font-size:.85rem}
+      footer .brand{justify-content:center;margin-bottom:1rem}
+      footer .brand span{color:var(--cream)}
+
+      @media(max-width:900px){
+        .menu,.nav>.btn{display:none}.burger{display:flex}
+        .menu.open{display:flex;flex-direction:column;gap:0;position:absolute;top:78px;left:0;right:0;background:var(--cream);border-bottom:1px solid var(--line);padding:.5rem 26px 1rem}
+        .menu.open a{padding:.9rem 0;border-bottom:1px solid var(--line)}
+        .about,.values,.dests,.fleet,.contact-grid{grid-template-columns:1fr}
+        .dests{grid-template-columns:1fr 1fr}
+        section{padding:64px 0}
+      }
+    </style>
+  </head>
+  <body id="top">
+    <header>
+      <div class="container nav">
+        <a class="brand" href="#top"><img src="images/logo-transparent.png" alt="Fly Iraq First logo" /><span>Fly Iraq First</span></a>
+        <nav class="menu" id="menu">
+          <a href="#about">Our Story</a>
+          <a href="#values">Values</a>
+          <a href="#destinations">Destinations</a>
+          <a href="#fleet">Fleet</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a href="#contact" class="btn btn-line">Contact</a>
+        <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow" style="color:var(--gold)">The Spirit of Mesopotamia</p>
+        <h1>Our Story<br />Takes Flight</h1>
+        <p>From the heart of Baghdad to the world — an airline carrying the pride and warmth of Iraq.</p>
+        <a href="#about" class="btn btn-fill">Discover More</a>
+        <a href="#contact" class="btn btn-line">Contact Us</a>
+      </div>
+    </section>
+
+    <!-- OUR STORY  (✏️ EDIT YOUR ABOUT TEXT BELOW) -->
+    <section id="about">
+      <div class="container about">
+        <div class="about-media"><img src="images/crew-uniform.jpg" alt="Fly Iraq First crew" /></div>
+        <div>
+          <p class="eyebrow">Our Story</p>
+          <h2>Born in Baghdad,<br />flying for Iraq</h2>
+          <!-- ✏️ EDIT: change the paragraphs below to your real story -->
+          <p>Fly Iraq First was founded with a single belief: that Iraq deserves an airline as proud and welcoming as its people. From the ancient banks of the Tigris to the great cities of the world, we carry that spirit on every flight.</p>
+          <p>We blend modern, international standards of safety and comfort with hospitality that could only come from home — making every journey unmistakably Iraqi.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUES -->
+    <section id="values" class="sand">
+      <div class="container">
+        <div class="head"><p class="eyebrow">What We Stand For</p><h2>Our Values</h2><div class="rule"></div></div>
+        <div class="values">
+          <div class="value"><div class="num">01</div><h3>Safety</h3><p>International safety standards on a modern, well-maintained fleet — always our first priority.</p></div>
+          <div class="value"><div class="num">02</div><h3>Hospitality</h3><p>The warmth of Iraqi welcome, brought to life by crew who care for every guest.</p></div>
+          <div class="value"><div class="num">03</div><h3>Pride</h3><p>Representing Iraq to the world with dignity, ambition, and heart.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESTINATIONS (info only) -->
+    <section id="destinations">
+      <div class="container">
+        <div class="head"><p class="eyebrow">Where We Fly</p><h2>Destinations</h2><p>Connecting Iraq to the region and beyond.</p><div class="rule"></div></div>
+        <div class="dests">
+          <div class="dest"><img src="images/dest-dubai.jpg" alt="Dubai"><span>Dubai</span></div>
+          <div class="dest"><img src="images/dest-istanbul.jpg" alt="Istanbul"><span>Istanbul</span></div>
+          <div class="dest"><img src="images/dest-london.jpg" alt="London"><span>London</span></div>
+          <div class="dest"><img src="images/dest-paris.jpg" alt="Paris"><span>Paris</span></div>
+          <div class="dest"><img src="images/dest-cairo.jpg" alt="Cairo"><span>Cairo</span></div>
+          <div class="dest"><img src="images/dest-baghdad.jpg" alt="Baghdad"><span>Baghdad</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FLEET -->
+    <section id="fleet" class="sand">
+      <div class="container">
+        <div class="head"><p class="eyebrow">Our Aircraft</p><h2>The Fleet</h2><div class="rule"></div></div>
+        <div class="fleet">
+          <figure><img src="images/aircraft-787.jpg" alt="Boeing 787"><figcaption><h3>Boeing 787</h3><p>Our long-haul Dreamliner for international journeys.</p></figcaption></figure>
+          <figure><img src="images/aircraft-a330.jpg" alt="Airbus A330"><figcaption><h3>Airbus A330</h3><p>Wide-body comfort across medium-haul routes.</p></figcaption></figure>
+          <figure><img src="images/aircraft-a320.jpg" alt="Airbus A320"><figcaption><h3>Airbus A320</h3><p>Efficient and reliable for regional flights.</p></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT  (✏️ EDIT YOUR EMAIL / PHONE / ADDRESS BELOW) -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="head"><p class="eyebrow" style="color:var(--gold)">Reach Us</p><h2>Contact</h2><div class="rule"></div></div>
+        <div class="contact-grid">
+          <div class="ci"><div class="ico">✉</div><h3>Email</h3>
+            <!-- ✏️ EDIT: your real email -->
+            <a href="mailto:info@flyiraqfirst.com">info@flyiraqfirst.com</a></div>
+          <div class="ci"><div class="ico">☎</div><h3>Phone</h3>
+            <!-- ✏️ EDIT: your real phone -->
+            <a href="tel:+9647700000000">+964 770 000 0000</a></div>
+          <div class="ci"><div class="ico">⌖</div><h3>Address</h3>
+            <!-- ✏️ EDIT: your real address -->
+            <p>Baghdad International Airport, Baghdad, Iraq</p></div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="brand"><img src="images/logo-transparent.png" alt="" style="width:34px;height:34px;object-fit:contain" /><span>Fly Iraq First</span></div>
+        © 2026 Fly Iraq First · The Spirit of Mesopotamia
+      </div>
+    </footer>
+
+    <script>
+      var b=document.getElementById('burger'), m=document.getElementById('menu');
+      b.addEventListener('click',function(){m.classList.toggle('open');});
+      m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open');});});
+    </script>
+  </body>
+</html>
