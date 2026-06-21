@@ -158,10 +158,10 @@ h1, h2, h3, h4 { font-family: var(--display); line-height: 1.1; font-weight: 700
 .cabin p { font-size: .85rem; color: var(--muted); }
 
 /* ---------- Fleet ---------- */
-.fleet-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.6rem; }
+.fleet-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.6rem; }
 .fleet-card { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm); transition: transform .2s, box-shadow .2s; }
 .fleet-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
-.fleet-card img { aspect-ratio: 16/10; object-fit: cover; width: 100%; }
+.fleet-card img { aspect-ratio: 5/2; object-fit: contain; width: 100%; background:#fff; padding:10px; }
 .fleet-body { padding: 1.3rem; }
 .fleet-body h3 { font-size: 1.2rem; color: var(--teal-800); margin-bottom: .4rem; }
 .fleet-body p { font-size: .9rem; color: var(--muted); }

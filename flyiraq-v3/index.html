@@ -77,16 +77,16 @@
       .card p{color:var(--muted);font-size:.92rem}
 
       /* Destinations (info only) */
-      .dests{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+      .dests{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
       .dest{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:3/4}
       .dest img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
       .dest:hover img{transform:scale(1.08)}
       .dest span{position:absolute;left:0;right:0;bottom:0;padding:1rem;color:#fff;font-family:var(--head);font-weight:600;background:linear-gradient(transparent,rgba(6,32,63,.85))}
 
       /* Fleet */
-      .fleet{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem}
+      .fleet{display:grid;grid-template-columns:repeat(2,1fr);gap:1.6rem}
       .fleet figure{border-radius:12px;overflow:hidden;border:1px solid var(--line);background:#fff}
-      .fleet img{aspect-ratio:16/10;object-fit:cover}
+      .fleet img{aspect-ratio:5/2;object-fit:contain;width:100%;background:#fff;padding:10px}
       .fleet figcaption{padding:1.1rem}
       .fleet h3{color:var(--navy);font-size:1.1rem}
       .fleet p{color:var(--muted);font-size:.88rem}
@@ -180,8 +180,6 @@
           <div class="dest"><img src="images/dest-paris.jpg" alt="Paris"><span>Paris</span></div>
           <div class="dest"><img src="images/dest-cairo.jpg" alt="Cairo"><span>Cairo</span></div>
           <div class="dest"><img src="images/dest-baghdad.jpg" alt="Baghdad"><span>Baghdad</span></div>
-          <div class="dest"><img src="images/aircraft-livery.jpg" alt="And more"><span>+ 35 more</span></div>
-          <div class="dest"><img src="images/aircraft-fleet.jpg" alt="Worldwide"><span>Worldwide</span></div>
         </div>
       </div>
     </section>
@@ -191,9 +189,8 @@
       <div class="container">
         <div class="head"><p class="eyebrow">Our Fleet</p><h2>Modern aircraft you can trust</h2></div>
         <div class="fleet">
-          <figure><img src="images/aircraft-787.jpg" alt="Boeing 787"><figcaption><h3>Boeing 787 Dreamliner</h3><p>Long-haul flagship for international routes.</p></figcaption></figure>
-          <figure><img src="images/aircraft-a330.jpg" alt="Airbus A330"><figcaption><h3>Airbus A330</h3><p>Wide-body comfort for medium-haul flights.</p></figcaption></figure>
-          <figure><img src="images/aircraft-a320.jpg" alt="Airbus A320"><figcaption><h3>Airbus A320</h3><p>Reliable workhorse for regional routes.</p></figcaption></figure>
+          <figure><img src="images/aircraft-e190.jpg" alt="Embraer E190"><figcaption><h3>Embraer E190</h3><p>Regional jet for efficient short &amp; medium-haul routes.</p></figcaption></figure>
+          <figure><img src="images/aircraft-a330.jpg" alt="Airbus A330 in Fly Iraq First livery"><figcaption><h3>Airbus A330</h3><p>Wide-body flagship for long-haul international routes.</p></figcaption></figure>
         </div>
       </div>
     </section>
