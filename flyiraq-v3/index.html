@@ -84,7 +84,7 @@
       .dest span{position:absolute;left:0;right:0;bottom:0;padding:1rem;color:#fff;font-family:var(--head);font-weight:600;background:linear-gradient(transparent,rgba(6,32,63,.85))}
 
       /* Fleet */
-      .fleet{display:grid;grid-template-columns:repeat(2,1fr);gap:1.6rem}
+      .fleet{display:grid;grid-template-columns:minmax(0,720px);justify-content:center;gap:1.6rem}
       .fleet figure{border-radius:12px;overflow:hidden;border:1px solid var(--line);background:#fff}
       .fleet img{aspect-ratio:5/2;object-fit:contain;width:100%;background:#fff;padding:10px}
       .fleet figcaption{padding:1.1rem}
@@ -189,8 +189,7 @@
       <div class="container">
         <div class="head"><p class="eyebrow">Our Fleet</p><h2>Modern aircraft you can trust</h2></div>
         <div class="fleet">
-          <figure><img src="images/aircraft-e190.jpg" alt="Embraer E190"><figcaption><h3>Embraer E190</h3><p>Regional jet for efficient short &amp; medium-haul routes.</p></figcaption></figure>
-          <figure><img src="images/aircraft-a330.jpg" alt="Airbus A330 in Fly Iraq First livery"><figcaption><h3>Airbus A330</h3><p>Wide-body flagship for long-haul international routes.</p></figcaption></figure>
+          <figure><img src="images/aircraft-e190.jpg" alt="Embraer E190 in Fly Iraq First livery"><figcaption><h3>Embraer E190</h3><p>Our original jet — efficient comfort across our network.</p></figcaption></figure>
         </div>
       </div>
     </section>
