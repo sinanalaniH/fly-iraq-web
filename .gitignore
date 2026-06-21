@@ -1,0 +1,12 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
+
+# Local tooling / preview config (machine-specific paths)
+.claude/
+
+# Node (in case a build is added later)
+node_modules/
+dist/
+.vite/
