@@ -6,7 +6,7 @@ Two design versions of the **Fly Iraq First** airline website.
 
 | Version | Folder | Description | Run on |
 |---------|--------|-------------|--------|
-| **v1** | [`extracted/`](extracted/) | Original design — dark navy + gold, luxury serif. A compiled **React + Vite** build (production output). | port **8098** |
+| **v1** | [`flyiraq-v1/`](flyiraq-v1/) | Original design — dark navy + gold, luxury serif. A compiled **React + Vite** build (production output). | port **8098** |
 | **v2** | [`flyiraq-v2/`](flyiraq-v2/) | New alternative design — light/editorial, deep teal + gold, modern sans. Hand-written **HTML + CSS + JS** source with a live flight-booking widget. | port **8090** |
 
 See [`flyiraq-v2/README.md`](flyiraq-v2/README.md) for a full feature comparison.
@@ -17,7 +17,7 @@ Both are static sites — no build step required. Serve each folder with any sta
 
 ```bash
 # v1 (must be served over HTTP — it's a React build, won't work via file://)
-python -m http.server 8098 -d extracted
+python -m http.server 8098 -d flyiraq-v1
 
 # v2
 python -m http.server 8090 -d flyiraq-v2
