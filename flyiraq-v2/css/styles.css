@@ -250,7 +250,9 @@ h1, h2, h3, h4 { font-family: var(--display); line-height: 1.1; font-weight: 700
 .btn-outline-light:hover { background: #fff; color: var(--teal-800); }
 
 /* Contact section */
-.contact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; max-width: 940px; margin: 0 auto; }
+.contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1.4rem; max-width: 1000px; margin: 0 auto; }
+.fleet-single { grid-template-columns: minmax(0, 760px); justify-content: center; }
+.fleet-single .fleet-card { border: 1px solid var(--line); }
 .contact-card { display: flex; flex-direction: column; align-items: center; text-align: center; gap: .6rem;
   background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 2.2rem 1.5rem;
   box-shadow: var(--shadow-sm); transition: transform .2s, border-color .2s, box-shadow .2s; color: var(--ink); }
