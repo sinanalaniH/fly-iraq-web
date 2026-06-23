@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fly Iraq First — Premium Travel from the Heart of Mesopotamia</title>
-    <meta name="description" content="Fly Iraq First — Iraq's premium airline. Book flights from Baghdad, Erbil and Basra to over 40 destinations worldwide. Award-winning comfort, Golden Wings loyalty, and authentic Iraqi hospitality." />
+    <meta name="description" content="Fly Iraq First — Iraq's premium airline. Over 40 destinations from Baghdad, Erbil and Basra, a modern fleet, Golden Wings loyalty, and authentic Iraqi hospitality." />
     <meta name="theme-color" content="#0b3a36" />
 
     <!-- Open Graph / social preview -->
@@ -17,13 +17,13 @@
     <link rel="icon" href="images/logo-transparent.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@300;400;500;600;700&family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <!-- Top promo bar -->
     <div class="promo-bar">
-      <span>✦ New non-stop service: <strong>Baghdad → Paris</strong>, 4× weekly — fares from $459</span>
+      <span data-i18n="promo">✦ New non-stop service: Baghdad → Paris, now 4× weekly</span>
     </div>
 
     <!-- Header -->
@@ -35,20 +35,21 @@
         </a>
 
         <nav class="main-nav" id="mainNav" aria-label="Primary">
-          <a href="#destinations">Destinations</a>
-          <a href="#experience">Experience</a>
-          <a href="#fleet">Fleet</a>
-          <a href="#loyalty">Golden Wings</a>
-          <a href="#about">About</a>
+          <a href="#destinations" data-i18n="nav.dest">Destinations</a>
+          <a href="#experience" data-i18n="nav.exp">Experience</a>
+          <a href="#fleet" data-i18n="nav.fleet">Fleet</a>
+          <a href="#loyalty" data-i18n="nav.loyalty">Golden Wings</a>
+          <a href="#about" data-i18n="nav.about">About</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
         </nav>
 
         <div class="header-actions">
           <div class="lang-switch" role="group" aria-label="Language">
-            <button class="active" type="button">EN</button>
-            <button type="button">عربي</button>
-            <button type="button">کوردی</button>
+            <button class="active" type="button" data-lang="en">EN</button>
+            <button type="button" data-lang="ar">عربي</button>
+            <button type="button" data-lang="ku">کوردی</button>
           </div>
-          <a href="#book" class="btn btn-primary btn-sm">Book a Flight</a>
+          <a href="#contact" class="btn btn-primary btn-sm" data-i18n="cta.contact">Contact Us</a>
           <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
             <span></span><span></span><span></span>
           </button>
@@ -62,50 +63,20 @@
         <div class="hero-bg" style="background-image:url('images/hero-bg.jpg')" aria-hidden="true"></div>
         <div class="hero-overlay" aria-hidden="true"></div>
         <div class="container hero-content">
-          <p class="eyebrow reveal">The Spirit of Mesopotamia</p>
-          <h1 class="reveal">Where Iraq<br />Meets the World</h1>
-          <p class="hero-sub reveal">Fly farther in comfort. Over 40 destinations, a modern fleet, and the warmth of Iraqi hospitality at 38,000 feet.</p>
+          <p class="eyebrow reveal" data-i18n="hero.eyebrow">The Spirit of Mesopotamia</p>
+          <h1 class="reveal" data-i18n="hero.title">Where Iraq<br />Meets the World</h1>
+          <p class="hero-sub reveal" data-i18n="hero.sub">Fly farther in comfort. Over 40 destinations, a modern fleet, and the warmth of Iraqi hospitality at 38,000 feet.</p>
 
-          <!-- Booking widget -->
-          <div class="booking-card reveal" id="book">
-            <div class="trip-tabs" role="tablist">
-              <button class="trip-tab active" type="button" role="tab" aria-selected="true">Round trip</button>
-              <button class="trip-tab" type="button" role="tab" aria-selected="false">One way</button>
-              <button class="trip-tab" type="button" role="tab" aria-selected="false">Multi-city</button>
-            </div>
-            <form class="booking-grid" onsubmit="return false">
-              <div class="field">
-                <label for="from">From</label>
-                <input id="from" type="text" value="Baghdad (BGW)" />
-              </div>
-              <button class="swap" type="button" aria-label="Swap origin and destination">⇄</button>
-              <div class="field">
-                <label for="to">To</label>
-                <input id="to" type="text" placeholder="Where to?" value="Dubai (DXB)" />
-              </div>
-              <div class="field">
-                <label for="depart">Depart</label>
-                <input id="depart" type="date" />
-              </div>
-              <div class="field">
-                <label for="return">Return</label>
-                <input id="return" type="date" />
-              </div>
-              <div class="field">
-                <label for="pax">Passengers</label>
-                <select id="pax">
-                  <option>1 Adult</option><option>2 Adults</option><option>2 Adults, 1 Child</option><option>Family (4+)</option>
-                </select>
-              </div>
-              <button class="btn btn-primary search-btn" type="submit">Search flights</button>
-            </form>
+          <div class="hero-cta reveal">
+            <a href="#destinations" class="btn btn-primary btn-lg" data-i18n="hero.explore">Explore Destinations</a>
+            <a href="#contact" class="btn btn-outline-light btn-lg" data-i18n="cta.contact">Contact Us</a>
           </div>
 
           <ul class="hero-stats reveal">
-            <li><strong>40+</strong><span>Destinations</span></li>
-            <li><strong>22</strong><span>Aircraft</span></li>
-            <li><strong>4.8★</strong><span>Guest rating</span></li>
-            <li><strong>2.1M</strong><span>Flyers / year</span></li>
+            <li><strong>40+</strong><span data-i18n="stats.dest">Destinations</span></li>
+            <li><strong>22</strong><span data-i18n="stats.aircraft">Aircraft</span></li>
+            <li><strong>4.8★</strong><span data-i18n="stats.rating">Guest rating</span></li>
+            <li><strong>2.1M</strong><span data-i18n="stats.flyers">Flyers / year</span></li>
           </ul>
         </div>
       </section>
@@ -113,10 +84,10 @@
       <!-- Trust strip -->
       <section class="trust">
         <div class="container trust-inner">
-          <span>IATA Member</span>
-          <span>4-Star Rated Service</span>
-          <span>Modern Boeing &amp; Airbus Fleet</span>
-          <span>24/7 Multilingual Support</span>
+          <span data-i18n="trust.1">IATA Member</span>
+          <span data-i18n="trust.2">4-Star Rated Service</span>
+          <span data-i18n="trust.3">Modern Boeing &amp; Airbus Fleet</span>
+          <span data-i18n="trust.4">24/7 Multilingual Support</span>
         </div>
       </section>
 
@@ -125,10 +96,10 @@
         <div class="container">
           <div class="section-head">
             <div>
-              <p class="eyebrow">Where we fly</p>
-              <h2>Popular destinations</h2>
+              <p class="eyebrow" data-i18n="dest.eyebrow">Where we fly</p>
+              <h2 data-i18n="dest.h2">Popular destinations</h2>
             </div>
-            <p class="section-lead">From the Tigris to the Thames — discover limited-time fares across our growing network.</p>
+            <p class="section-lead" data-i18n="dest.lead">From the Tigris to the Thames — explore our growing network.</p>
           </div>
 
           <div class="dest-grid" id="destGrid"><!-- cards injected by JS --></div>
@@ -142,21 +113,21 @@
             <img src="images/cabin-business.jpg" alt="Fly Iraq First business class cabin" />
           </div>
           <div class="exp-copy">
-            <p class="eyebrow">On board</p>
-            <h2>Travel that feels like home</h2>
-            <p>Lie-flat seats, regional cuisine prepared by Iraqi chefs, and cabin crew who treat every guest like family. Three cabins, one standard: exceptional.</p>
+            <p class="eyebrow" data-i18n="exp.eyebrow">On board</p>
+            <h2 data-i18n="exp.h2">Travel that feels like home</h2>
+            <p data-i18n="exp.p">Lie-flat seats, regional cuisine prepared by Iraqi chefs, and cabin crew who treat every guest like family. Three cabins, one standard: exceptional.</p>
             <div class="cabin-list">
               <article class="cabin">
                 <img src="images/cabin-first.jpg" alt="First class suite" />
-                <div><h3>First Suite</h3><p>Private suites, on-demand dining, chauffeur transfer.</p></div>
+                <div><h3 data-i18n="cabin.first.t">First Suite</h3><p data-i18n="cabin.first.d">Private suites, on-demand dining, chauffeur transfer.</p></div>
               </article>
               <article class="cabin">
                 <img src="images/cabin-business.jpg" alt="Business class seat" />
-                <div><h3>Business</h3><p>Fully lie-flat beds, lounge access, priority everything.</p></div>
+                <div><h3 data-i18n="cabin.business.t">Business</h3><p data-i18n="cabin.business.d">Fully lie-flat beds, lounge access, priority everything.</p></div>
               </article>
               <article class="cabin">
                 <img src="images/cabin-economy.jpg" alt="Economy class cabin" />
-                <div><h3>Economy</h3><p>Generous legroom, free meals, seat-back entertainment.</p></div>
+                <div><h3 data-i18n="cabin.economy.t">Economy</h3><p data-i18n="cabin.economy.d">Generous legroom, free meals, seat-back entertainment.</p></div>
               </article>
             </div>
           </div>
@@ -168,19 +139,19 @@
         <div class="container">
           <div class="section-head">
             <div>
-              <p class="eyebrow">Our fleet</p>
-              <h2>A modern, fuel-efficient fleet</h2>
+              <p class="eyebrow" data-i18n="fleet.eyebrow">Our fleet</p>
+              <h2 data-i18n="fleet.h2">A modern, fuel-efficient fleet</h2>
             </div>
-            <p class="section-lead">Quiet cabins, lower emissions, and the range to connect Baghdad directly to the world.</p>
+            <p class="section-lead" data-i18n="fleet.lead">Quiet cabins, lower emissions, and the range to connect Baghdad directly to the world.</p>
           </div>
           <div class="fleet-grid">
             <article class="fleet-card">
               <img src="images/aircraft-e190.jpg" alt="Embraer E190" />
-              <div class="fleet-body"><h3>Embraer E190</h3><p>Regional jet · efficient comfort on short &amp; medium-haul routes.</p></div>
+              <div class="fleet-body"><h3 data-i18n="fleet.e190.t">Embraer E190</h3><p data-i18n="fleet.e190.d">Our original jet — efficient comfort on short &amp; medium-haul routes.</p></div>
             </article>
             <article class="fleet-card">
               <img src="images/aircraft-a330.jpg" alt="Airbus A330 in Fly Iraq First livery" />
-              <div class="fleet-body"><h3>Airbus A330</h3><p>Wide-body flagship · long-haul international routes.</p></div>
+              <div class="fleet-body"><h3 data-i18n="fleet.a330.t">Airbus A330</h3><p data-i18n="fleet.a330.d">Wide-body flagship · long-haul international routes.</p></div>
             </article>
           </div>
         </div>
@@ -190,15 +161,15 @@
       <section class="section loyalty" id="loyalty">
         <div class="container loyalty-inner">
           <div class="loyalty-copy">
-            <p class="eyebrow gold">Golden Wings</p>
-            <h2>Every journey rewards you</h2>
-            <p>Earn miles on every flight, unlock lounge access, priority boarding and complimentary upgrades. Membership is free — your next trip starts paying you back today.</p>
+            <p class="eyebrow gold" data-i18n="loy.eyebrow">Golden Wings</p>
+            <h2 data-i18n="loy.h2">Every journey rewards you</h2>
+            <p data-i18n="loy.p">Earn miles on every flight, unlock lounge access, priority boarding and complimentary upgrades. Membership is free — your next trip starts paying you back today.</p>
             <ul class="ticks">
-              <li>Earn &amp; redeem miles across 40+ destinations</li>
-              <li>Tier upgrades: Silver, Gold, Platinum</li>
-              <li>Family pooling &amp; partner rewards</li>
+              <li data-i18n="loy.t1">Earn &amp; redeem miles across 40+ destinations</li>
+              <li data-i18n="loy.t2">Tier upgrades: Silver, Gold, Platinum</li>
+              <li data-i18n="loy.t3">Family pooling &amp; partner rewards</li>
             </ul>
-            <a href="#book" class="btn btn-gold">Join free</a>
+            <a href="#contact" class="btn btn-gold" data-i18n="loy.btn">Join Golden Wings</a>
           </div>
           <div class="loyalty-card-wrap">
             <img src="images/golden-wings-card.jpg" alt="Golden Wings loyalty card" class="loyalty-card" />
@@ -211,39 +182,69 @@
         <div class="container">
           <div class="section-head center">
             <div>
-              <p class="eyebrow">Guest stories</p>
-              <h2>Loved by travellers</h2>
+              <p class="eyebrow" data-i18n="rev.eyebrow">Guest stories</p>
+              <h2 data-i18n="rev.h2">Loved by travellers</h2>
             </div>
           </div>
           <div class="reviews-grid">
             <figure class="review">
               <div class="stars">★★★★★</div>
-              <blockquote>"The smoothest journey from Baghdad I've ever had. The crew genuinely cared."</blockquote>
+              <blockquote data-i18n="rev.q1">"The smoothest journey from Baghdad I've ever had. The crew genuinely cared."</blockquote>
               <figcaption><img src="images/testimonial-1.jpg" alt="" /><span><strong>Layla A.</strong>Baghdad → London</span></figcaption>
             </figure>
             <figure class="review">
               <div class="stars">★★★★★</div>
-              <blockquote>"Business class felt like a five-star hotel in the sky. I'll fly no one else."</blockquote>
+              <blockquote data-i18n="rev.q2">"Business class felt like a five-star hotel in the sky. I'll fly no one else."</blockquote>
               <figcaption><img src="images/testimonial-2.jpg" alt="" /><span><strong>Omar K.</strong>Erbil → Dubai</span></figcaption>
             </figure>
             <figure class="review">
               <div class="stars">★★★★★</div>
-              <blockquote>"Finally an airline that makes me proud to fly Iraqi. World class."</blockquote>
+              <blockquote data-i18n="rev.q3">"Finally an airline that makes me proud to fly Iraqi. World class."</blockquote>
               <figcaption><img src="images/testimonial-3.jpg" alt="" /><span><strong>Sara M.</strong>Basra → Istanbul</span></figcaption>
             </figure>
           </div>
         </div>
       </section>
 
-      <!-- About / CTA -->
+      <!-- About -->
       <section class="section about" id="about">
         <div class="container about-inner">
           <div class="about-media"><img src="images/crew-uniform.jpg" alt="Fly Iraq First cabin crew" /></div>
           <div class="about-copy">
-            <p class="eyebrow">Our story</p>
-            <h2>Carrying the pride of Iraq, higher</h2>
-            <p>Born in Baghdad, Fly Iraq First connects our homeland to the world with safety, warmth and ambition. From the ancient cradle of civilisation, we're building a modern airline Iraqis can be proud of.</p>
-            <a href="#book" class="btn btn-primary">Start your journey</a>
+            <p class="eyebrow" data-i18n="about.eyebrow">Our story</p>
+            <h2 data-i18n="about.h2">Carrying the pride of Iraq, higher</h2>
+            <p data-i18n="about.p1">Fly Iraq First started with a simple belief: that Iraqis deserve an airline that truly feels like their own. We're proud to call Baghdad home, and we try to carry a little of that warmth onto every single flight — whether you're heading off to see family, flying out to close a deal, or finally taking the trip you've been promising yourself for years.</p>
+            <p data-i18n="about.p2">Our people are Iraqi, our welcome is Iraqi, and the care you feel on board isn't something we think you can fake. We're still a young airline, and we're growing carefully — adding routes, aircraft and people who believe in doing things properly. Thank you for flying with us. We honestly don't take it for granted.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact" id="contact">
+        <div class="container">
+          <div class="section-head center">
+            <div>
+              <p class="eyebrow gold" data-i18n="contact.eyebrow">Get in touch</p>
+              <h2 data-i18n="contact.h2">Contact us</h2>
+              <p class="section-lead" data-i18n="contact.lead" style="margin:.6rem auto 0">We'd love to hear from you — our team is here to help, any time.</p>
+            </div>
+          </div>
+          <div class="contact-grid">
+            <a class="contact-card" href="mailto:info@flyiraqfirst.com">
+              <div class="contact-ico">✉</div>
+              <h3 data-i18n="contact.email_l">Email</h3>
+              <span class="contact-val">info@flyiraqfirst.com</span>
+            </a>
+            <a class="contact-card" href="tel:+9647700888861">
+              <div class="contact-ico">☎</div>
+              <h3 data-i18n="contact.phone_l">Phone</h3>
+              <span class="contact-val" dir="ltr">+964 770 088 8861</span>
+            </a>
+            <a class="contact-card" href="tel:+9647800888861">
+              <div class="contact-ico">☎</div>
+              <h3 data-i18n="contact.phone_l2">Phone</h3>
+              <span class="contact-val" dir="ltr">+964 780 088 8861</span>
+            </a>
           </div>
         </div>
       </section>
@@ -252,9 +253,9 @@
       <section class="cta-banner" style="background-image:url('images/aircraft-livery.jpg')">
         <div class="cta-overlay"></div>
         <div class="container cta-content">
-          <h2>Ready to take off?</h2>
-          <p>Book today and discover why travellers choose Fly Iraq First.</p>
-          <a href="#book" class="btn btn-gold btn-lg">Book a flight</a>
+          <h2 data-i18n="ctab.h2">Ready to fly with us?</h2>
+          <p data-i18n="ctab.p">Get in touch and discover why travellers choose Fly Iraq First.</p>
+          <a href="#contact" class="btn btn-gold btn-lg" data-i18n="cta.contact">Contact Us</a>
         </div>
       </section>
     </main>
@@ -267,31 +268,24 @@
             <img src="images/logo-transparent.png" alt="Fly Iraq First logo" class="brand-mark" />
             <span class="brand-text">Fly <strong>Iraq</strong> First</span>
           </div>
-          <p>The Spirit of Mesopotamia.<br />Designed with Iraqi pride.</p>
+          <p data-i18n="footer.tagline">The Spirit of Mesopotamia.<br />Designed with Iraqi pride.</p>
         </div>
         <div class="footer-col">
-          <h4>Explore</h4>
-          <a href="#destinations">Destinations</a>
-          <a href="#experience">Experience</a>
-          <a href="#fleet">Fleet</a>
-          <a href="#loyalty">Golden Wings</a>
+          <h4 data-i18n="footer.explore">Explore</h4>
+          <a href="#destinations" data-i18n="nav.dest">Destinations</a>
+          <a href="#experience" data-i18n="nav.exp">Experience</a>
+          <a href="#fleet" data-i18n="nav.fleet">Fleet</a>
+          <a href="#loyalty" data-i18n="nav.loyalty">Golden Wings</a>
         </div>
         <div class="footer-col">
-          <h4>Support</h4>
-          <a href="#">Contact us</a>
-          <a href="#">Help centre</a>
-          <a href="#">Baggage info</a>
-          <a href="#">Travel advisory</a>
-        </div>
-        <div class="footer-col">
-          <h4>Legal</h4>
-          <a href="#">Terms &amp; conditions</a>
-          <a href="#">Privacy policy</a>
-          <a href="#">Cookie policy</a>
+          <h4 data-i18n="footer.contact">Contact</h4>
+          <a href="mailto:info@flyiraqfirst.com">info@flyiraqfirst.com</a>
+          <a href="tel:+9647700888861" dir="ltr">+964 770 088 8861</a>
+          <a href="tel:+9647800888861" dir="ltr">+964 780 088 8861</a>
         </div>
       </div>
       <div class="container footer-bottom">
-        <span>© 2026 Fly Iraq First. All rights reserved.</span>
+        <span data-i18n="footer.rights">© 2026 Fly Iraq First. All rights reserved.</span>
         <span class="footer-socials">in · X · ⓕ · ◎</span>
       </div>
     </footer>
